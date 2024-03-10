@@ -10,11 +10,12 @@
     <title>Boa Compra - contato</title>
         <header>Boa Compra</header>
 
+
         <nav>
-            <a href="/">Home</a>
-            <a href="about">Sobre</a>
-            <a href="login">Login</a> 
-            <a href="contact">Contato</a>
+            <a href="{{ route('site.main') }}">Home</a>
+            <a href="{{ route('site.about') }}">Sobre</a>
+            <a href="{{ route('site.login') }}">Login</a> 
+            <a href="{{ route('site.contact') }}">Contato</a>
         </nav>
     </body>
 
