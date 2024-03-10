@@ -7,7 +7,7 @@
     </head>
 
     <body>
-    <title>Boa Compra - home</title>
+    <title>Boa Compra - produto</title>
         <header>Boa Compra</header>
 
         <nav>

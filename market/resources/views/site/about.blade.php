@@ -7,8 +7,8 @@
     </head>
 
     <body>
-    <title>Boa Compra - home</title>
-        <header>Boa Compra</header>
+    <title>Boa Compra - sobre</title>
+        <header>Boa Compra - about</header>
 
         <nav>
             <a href="/">Home</a>
