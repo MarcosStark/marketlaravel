@@ -12,13 +12,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('about', 'AboutController@about');
-Route::get('contact', 'ContactController@contact');
-Route::get('/', 'MainController@main');
-Route::get('product', 'ProductController@product');
+Route::get('about', 'AboutController@about')->name('site.about');
+Route::get('contact', 'ContactController@contact')->name('site.contact');
+Route::get('/', 'MainController@main')->name('site.main');
+Route::get('login', function(){return 'login';})->name('site.login');
 
-Route::get('products/{name}/{quantity}/{value}',
-function(string $name, int $quantity, float $value){
-    echo "Nome: $name <br />Quantidade: $quantity <br /> Valor: $value <br />";
-    }
-)->where('name','[A-Za-z]+')->where('quantity','[0-9]');
+
+Route::prefix('/app')->group(function(){
+    Route::get('products', 'ProductController@product')->name('app.products');
+    Route::get('clients', function(){return 'clientes';})->name('app.clients');
+    Route::get('suppliers', function(){return 'fornecedores';})->name('app.suppliers');
+});

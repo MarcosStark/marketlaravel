@@ -9,11 +9,10 @@
     <body>
     <title>Boa Compra - produto</title>
         <header>Boa Compra</header>
-
         <nav>
             <a href="/">Home</a>
             <a href="about">Sobre</a>
-            <a href="product">Produtos</a> 
+            <a href="login">Login</a> 
             <a href="contact">Contato</a>
         </nav>
     </body>
