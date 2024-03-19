@@ -12,18 +12,20 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'MainController@main')->name('site.index');
 Route::get('/about', 'AboutController@about')->name('site.about');
 Route::get('/contact', 'ContactController@contact')->name('site.contact');
-Route::get('/', 'MainController@main')->name('site.main');
-Route::get('/login', function(){return 'login';})->name('site.login');
 
+Route::get('/login', function(){ return 'login';})->name('site.login');
 
 Route::prefix('/app')->group(function(){
-    Route::get('/products', 'ProductController@product')->name('app.products');
-    Route::get('/clients', function(){return 'clientes';})->name('app.clients');
-    Route::get('/suppliers', function(){return 'fornecedores';})->name('app.suppliers');
+    Route::get('/clients', function(){ return 'clients';})->name('app.clients');
+    Route::get('/suppliers', function(){ return 'suppliers';})->name('app.suppliers');
+    Route::get('/products', function(){ return 'products';})->name('app.products');
 });
 
 Route::fallback(function(){
-    echo 'Página não encontrada. <a href="'.route('site.main').'">clique aqui</a> e retorne para a página inicial.';
+    echo 'Página inexistente. Retorne à <a href="'.route('site.index').'">página inicial</a>.';
 });
+
+

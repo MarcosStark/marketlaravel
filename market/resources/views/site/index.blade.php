@@ -1,25 +1,24 @@
-<html>   
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href=""> 
-    </head>
 
-    <body>
-    <title>Boa Compra - home</title>
-        <header>Boa Compra</header>
 
-        <nav>
-            <a href="{{ route('site.main') }}">Home</a>
-            <a href="{{ route('site.about') }}">Sobre</a>
-            <a href="{{ route('site.login') }}">Login</a> 
-            <a href="{{ route('site.contact') }}">Contato</a>
-        </nav>
+        <h1>Mini Mercado Boa Compra</h1>
+
+        <table>
+            <tr>
+                <td class="main-area">
+                    <article>
+                        <section id="main-img"><img src="{{ asset('img/mini_mercado.jpeg') }}"></section>
+                        <p>Mini mercado familiar, que em buscando ser a prefeência da família malhadense e referência em toda a região.</p>
+                    </article>  
+                </td>
+                <td class="secundary-area">
+                    <aside>Texto à direita</aside>
+                </td>
+            </tr>
+        </table>
+        
+
+
     </body>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="market_ajax&jquery.js"></script> 
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

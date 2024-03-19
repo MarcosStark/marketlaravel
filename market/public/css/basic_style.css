@@ -1,0 +1,35 @@
+nav{
+    text-align: center;
+}
+nav>dl>dt>a{
+    color: black;
+    text-decoration: none;
+    padding: 0px 5px 0px 5px;
+}
+
+nav>dl>dt>a:hover{
+    color: orange;
+}
+
+h1{
+    text-align: center;
+    color: orange;
+}
+
+#main-img{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#main-img:hover{
+    scale: 1.5;
+    transition: 0.7s;
+}
+
+p{
+    word-break: normal;
+}
+
+.main-area{
+    width: 900px;
+}
