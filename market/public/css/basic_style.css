@@ -33,3 +33,18 @@ p{
 .main-area{
     width: 900px;
 }
+
+#form-contact{
+    border: 3px solid ;
+    border-radius: 5px;
+    border-color: green;
+    width: 300px;
+    padding: 15px 0px 15px 47px;
+    margin: 100px 0px 0px 500px;
+}
+
+input{
+    border: 2px solid rgb(112, 94, 59);
+    border-radius: 5px;
+}
+

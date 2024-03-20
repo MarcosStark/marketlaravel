@@ -8,17 +8,8 @@
         <link rel="stylesheet" href="{{ asset('css/basic_style.css') }}">
     </head>
     <body>
-        <nav>
-            <dl>
-                <dt>
-                    <a href="{{ route('site.index') }}">Home</a>
-                    <a href="{{ route('site.about') }}">Sobre</a>
-                    <a href="{{ route('site.contact') }}">Contato</a>
-                </dt>
-       
-            </dl>
-        </nav>
-
+        
+        @include('site.layouts._partials.top')
         @yield('content')
 
     </body>
