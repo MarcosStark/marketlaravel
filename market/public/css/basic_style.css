@@ -53,3 +53,11 @@ input{
     margin-left: 65px;
 }
 
+.border-blackk{
+    border: 3px solid black;
+}
+
+.border-colorful{
+    border: 3px solid rgb(112, 94, 59);
+}
+

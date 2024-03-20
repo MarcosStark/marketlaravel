@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'MainController@main')->name('site.index');
 Route::get('/about', 'AboutController@about')->name('site.about');
 Route::get('/contact', 'ContactController@contact')->name('site.contact');
+Route::post('/contact', 'ContactController@contact')->name('site.contact');
 
 Route::get('/login', function(){ return 'login';})->name('site.login');
 

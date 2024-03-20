@@ -14,7 +14,11 @@
                 </article>  
             </td>
             <td class="secundary-area">
-                <aside>Texto à direita</aside>
+                <aside>
+                    @component('site.layouts._components.form_contact', ['class' => 'border-blackk'])
+                    <h6>Após cadastrar-se você terá acesso ao nosso carrinho de compras e aos nossos produtos.IDX</h6>
+                    @endcomponent
+                </aside>
             </td>
         </tr>
     </table>
